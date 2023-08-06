@@ -1,0 +1,288 @@
+<html>
+
+
+
+  <style>
+    /* Inline CSS for Rice Purity Calculator */
+    .rice-purity-container {
+      max-width: 600px;
+      width: 100%;
+      padding: 30px;
+      background-color: #fff;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      margin: 0 auto; /* Center align the calculator */
+    }
+
+    .rice-purity-container h1 {
+      text-align: center;
+      color: #1ba97f;
+      margin-bottom: 20px;
+      font-family: 'DM Sans', Arial, sans-serif;
+      font-weight: 700;
+    }
+
+    .rice-purity-container p {
+      color: #4b4b4b;
+      font-size: 18px;
+      font-family: 'DM Sans', Arial, sans-serif;
+      font-weight: 400;
+      margin-bottom: 20px;
+    }
+
+    .rice-purity-container form ol {
+      padding-left: 30px;
+    }
+
+    .rice-purity-container form ol li {
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+    }
+
+    .rice-purity-container label {
+      font-weight: bold;
+      flex: 1;
+      color: #4b4b4b;
+      font-family: 'DM Sans', Arial, sans-serif;
+      font-weight: 500;
+    }
+
+    .rice-purity-container input[type="checkbox"] {
+      margin-right: 10px;
+      transform: scale(1.5);
+      cursor: pointer;
+    }
+
+    .rice-purity-container button {
+      color: #ffffff;
+      background-color: #1ba97f;
+      border: none;
+      padding: 12px 30px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      width: 100%;
+      font-family: 'DM Sans', Arial, sans-serif;
+      font-weight: 500;
+      transition: background-color 0.2s;
+      margin-top: 20px;
+    }
+
+    .rice-purity-container button:hover {
+      background-color: #168967;
+    }
+
+    .rice-purity-container #result {
+      margin-top: 30px;
+      padding: 20px;
+      border: 1px solid #1ba97f;
+      border-radius: 5px;
+      text-align: center;
+      font-size: 24px;
+      color: #4b4b4b;
+      font-weight: bold;
+      font-family: 'DM Sans', Arial, sans-serif;
+      background-color: #afecda;
+    }
+
+    .rice-purity-container #footer {
+      margin-top: 20px;
+      font-size: 12px;
+      text-align: center;
+      color: #9b9b9b;
+      font-family: 'DM Sans', Arial, sans-serif;
+    }
+
+    /* Responsive styles */
+    @media (max-width: 768px) {
+      .rice-purity-container {
+        max-width: 100%;
+        padding: 20px;
+      }
+    }
+  </style>
+<div class="rice-purity-container">
+  <h1>Rice Purity Calculator</h1>
+  <p>Answer the following questions to calculate your Rice Purity Score:</p>
+  <form id="ricePurityForm">
+    <ol>
+      <li><label><input type="checkbox"> Taken drugs?</label></li>
+      <li><label><input type="checkbox"> Been arrested?</label></li>
+      <li><label><input type="checkbox"> Cheated on a test/exam?</label></li>
+      <li><label><input type="checkbox"> Had sex?</label></li>
+      <li><label><input type="checkbox"> Had sex in a car?</label></li>
+      <li><label><input type="checkbox"> Had sex in a public place?</label></li>
+      <li><label><input type="checkbox"> Had sex in a pool/hot tub?</label></li>
+      <li><label><input type="checkbox"> Had sex with two or more people in a 24-hour period?</label></li>
+      <li><label><input type="checkbox"> Had sex with someone whose name you didn't know?</label></li>
+      <li><label><input type="checkbox"> Had sex with someone you met within 24 hours?</label></li>
+      <li><label><input type="checkbox"> Had sex with someone you didn't meet in a private setting?</label></li>
+      <li><label><input type="checkbox"> Had sex with someone who was married or engaged?</label></li>
+      <!-- Continue adding more questions -->
+      <li><label><input type="checkbox"> Had sex with someone significantly older or younger?</label></li>
+      <li><label><input type="checkbox"> Had sex with someone after being awake for 24+ hours?</label></li>
+      <li><label><input type="checkbox"> Had sex with someone while both of you were naked?</label></li>
+      <li><label><input type="checkbox"> Had sex with someone you had just met?</label></li>
+      <li><label><input type="checkbox"> Had sex with someone you knew for less than a day?</label></li>
+      <li><label><input type="checkbox"> Had sex with someone you met at a club/party?</label></li>
+      <li><label><input type="checkbox"> Had sex with someone you met online?</label></li>
+      <li><label><input type="checkbox"> Had sex with someone you met through an app?</label></li>
+      <li><label><input type="checkbox"> Had sex with someone you met on social media?</label></li>
+      <li><label><input type="checkbox"> Had sex with someone you met on a dating site?</label></li>
+      <li><label><input type="checkbox"> Had sex with someone you met on Tinder?</label></li>
+      <li><label><input type="checkbox"> Had sex with someone you met on Grindr?</label></li>
+      <li><label><input type="checkbox"> Had sex with someone you met on Bumble?</label></li>
+      <li><label><input type="checkbox"> Had sex with someone you met on OkCupid?</label></li>
+      <li><label><input type="checkbox"> Had sex with someone you met on Craigslist?</label></li>
+      <li><label><input type="checkbox"> Had sex with someone you met on Reddit?</label></li>
+      <li><label><input type="checkbox"> Had sex with someone you met on 4chan?</label></li>
+      <li><label><input type="checkbox"> Had sex with someone you met on Discord?</label></li>
+      <li><label><input type="checkbox"> Had sex with someone you met on Snapchat?</label></li>
+      <li><label><input type="checkbox"> Had sex with someone you met on Facebook?</label></li>
+      <li><label><input type="checkbox"> Had sex with someone you met on Instagram?</label></li>
+      <li><label><input type="checkbox"> Had sex with someone you met on TikTok?</label></li>
+      <li><label><input type="checkbox"> Had sex with someone you met on YouTube?</label></li>
+      <li><label><input type="checkbox"> Had sex with someone you met on Twitch?</label></li>
+      <li><label><input type="checkbox"> Had sex with someone you met on a forum?</label></li>
+      <li><label><input type="checkbox"> Had sex with someone you met on a gaming platform?</label></li>
+      <li><label><input type="checkbox"> Had sex with someone you met on a video call?</label></li>
+      <li><label><input type="checkbox"> Had sex with someone you met at a convention/event?</label></li>
+      <li><label><input type="checkbox"> Had sex with someone you met while traveling?</label></li>
+      <li><label><input type="checkbox"> Had sex with someone you met at school/university?</label></li>
+      <li><label><input type="checkbox"> Had sex with someone you met at work?</label></li>
+      <li><label><input type="checkbox"> Had sex with someone you met through a mutual friend?</label></li>
+      <li><label><input type="checkbox"> Had sex with someone you met through family?</label></li>
+      <li><label><input type="checkbox"> Had sex with someone you met through a colleague?</label></li>
+      <li><label><input type="checkbox"> Had sex with someone you met at a wedding/funeral?</label></li>
+      <li><label><input type="checkbox"> Had sex with someone you met at a concert/music festival?</label></li>
+      <li><label><input type="checkbox"> Had sex with someone you met at a sports event?</label></li>
+      <li><label><input type="checkbox"> Had sex with someone you met at a religious gathering?</label></li>
+      <li><label><input type="checkbox"> Had sex with someone you met at a protest/demonstration?</label></li>
+      <li><label><input type="checkbox"> Had sex with someone you met at a community event?</label></li>
+      <li><label><input type="checkbox"> Had sex with someone you met at a charity event?</label></li>
+      <li><label><input type="checkbox"> Had sex with someone you met at a volunteer project?</label></li>
+      <li><label><input type="checkbox"> Had sex with someone you met at a political gathering?</label></li>
+      <li><label><input type="checkbox"> Had sex with someone you met at a networking event?</label></li>
+      <li><label><input type="checkbox"> Had sex with someone you met through a hobby group?</label></li>
+      <li><label><input type="checkbox"> Had sex with someone you met at a workshop/class?</label></li>
+      <li><label><input type="checkbox"> Had sex with someone you met at a book club?</label></li>
+      <li><label><input type="checkbox"> Had sex with someone you met at a cooking class?</label></li>
+      <li><label><input type="checkbox"> Had sex with someone you met at a dance class?</label></li>
+      <li><label><input type="checkbox"> Had sex with someone you met at a painting class?</label></li>
+      <li><label><input type="checkbox"> Had sex with someone you met at a photography class?</label></li>
+      <li><label><input type="checkbox"> Had sex with someone you met at a fitness class/gym?</label></li>
+      <li><label><input type="checkbox"> Had sex with someone you met at a yoga class?</label></li>
+      <li><label><input type="checkbox"> Had sex with someone you met at a meditation retreat?</label></li>
+      <li><label><input type="checkbox"> Had sex with someone you met at a self-improvement seminar?</label></li>
+      <li><label><input type="checkbox"> Had sex with someone you met at a support group?</label></li>
+      <li><label><input type="checkbox"> Had sex with someone you met at a therapy session?</label></li>
+      <li><label><input type="checkbox"> Had sex with someone you met at a counseling session?</label></li>
+      <li><label><input type="checkbox"> Had sex with someone you met at a health retreat?</label></li>
+      <li><label><input type="checkbox"> Had sex with someone you met at a healing session?</label></li>
+      <li><label><input type="checkbox"> Had sex with someone you met at a tarot reading?</label></li>
+      <li><label><input type="checkbox"> Had sex with someone you met at a psychic reading?</label></li>
+      <li><label><input type="checkbox"> Had sex with someone you met at an astrology session?</label></li>
+      <li><label><input type="checkbox"> Had sex with someone you met at a palm reading?</label></li>
+      <li><label><input type="checkbox"> Had sex with someone you met at a witchcraft gathering?</label></li>
+      <li><label><input type="checkbox"> Had sex with someone you met at a spiritual retreat?</label></li>
+      <li><label><input type="checkbox"> Had sex with someone you met at a naturist gathering?</label></li>
+      <li><label><input type="checkbox"> Had sex with someone you met at a polyamory meetup?</label></li>
+      <li><label><input type="checkbox"> Had sex with someone you met at a swinging party?</label></li>
+      <li><label><input type="checkbox"> Had sex with someone you met at a BDSM event?</label></li>
+      <li><label><input type="checkbox"> Had sex with someone you met at a kink/fetish gathering?</label></li>
+      <li><label><input type="checkbox"> Had sex with someone you met at a nudist beach?</label></li>
+      <li><label><input type="checkbox"> Had sex with someone you met at a sex-positive event?</label></li>
+      <li><label><input type="checkbox"> Had sex with someone you met at a sexual education class?</label></li>
+      <li><label><input type="checkbox"> Had sex with someone you met at a sex therapy session?</label></li>
+      <li><label><input type="checkbox"> Had sex with someone you met at a sex toy shop?</label></li>
+      <li><label><input type="checkbox"> Had sex with someone you met at a strip club?</label></li>
+      <li><label><input type="checkbox"> Had sex with someone you met at a brothel?</label></li>
+      <li><label><input type="checkbox"> Had sex with someone you met at a massage parlor?</label></li>
+      <li><label><input type="checkbox"> Had sex with someone you met at an adult entertainment venue?</label></li>
+      <li><label><input type="checkbox"> Had sex with someone you met at a swinger club?</label></li>
+      <li><label><input type="checkbox"> Had sex with someone you met at a sex party?</label></li>
+      <li><label><input type="checkbox"> Had sex with someone you met at an orgy?</label></li>
+      <li><label><input type="checkbox"> Had sex with someone you met at a darkroom/cruising area?</label></li>
+      <li><label><input type="checkbox"> Had sex with someone you met at a glory hole?</label></li>
+      <li><label><input type="checkbox"> Had sex with someone you met at a red light district?</label></li>
+      <li><label><input type="checkbox"> Had sex with someone you met at a sex club?</label></li>
+      <li><label><input type="checkbox"> Had sex with someone you met at a sex cinema/theater?</label></li>
+      <li><label><input type="checkbox"> Had sex with someone you met at a sex shop?</label></li>
+      <li><label><input type="checkbox"> Had sex with someone you met at a sex museum?</label></li>
+      <li><label><input type="checkbox"> Had sex with someone you met at a sex fair/expo?</label></li>
+      <li><label><input type="checkbox"> Had sex with someone you met at a sex club or event abroad?</label></li>
+      <li><label><input type="checkbox"> Had sex with someone you met at a nude beach?</label></li>
+      <li><label><input type="checkbox"> Had sex with someone you met at a bathhouse/sauna?</label></li>
+      <li><label><input type="checkbox"> Had sex with someone you met at a sex resort?</label></li>
+      <li><label><input type="checkbox"> Had sex with someone you met at a sex cruise?</label></li>
+      <li><label><input type="checkbox"> Had sex with someone you met at a sex party on a boat?</label></li>
+      <li><label><input type="checkbox"> Had sex with someone you met at a sex party in a mansion?</label></li>
+      <li><label><input type="checkbox"> Had sex with someone you met at a sex party in a swingers festival?</label></li>
+      <li><label><input type="checkbox"> Had sex with someone you met at a sex party in a gang bang festival?</label></li>
+      <li><label><input type="checkbox"> Had sex with someone you met at a sex party in a threesome/swinger festival?</label></li>
+      <li><label><input type="checkbox"> Had sex with someone you met at a sex party in a play festival?</label></li>
+      <li><label><input type="checkbox"> Had sex with someone you met at a sex party in a polyamory festival?</label></li>
+      <li><label><input type="checkbox"> Had sex with someone you met at a sex party in a hedonism festival?</label></li>
+      <li><label><input type="checkbox"> Had sex with someone you met at a sex party in a fetish convention?</label></li>
+      <li><label><input type="checkbox"> Had sex with someone you met at a sex party in a kink convention?</label></li>
+      <li><label><input type="checkbox"> Had sex with someone you met at a sex party in a BDSM convention?</label></li>
+      <li><label><input type="checkbox"> Had sex with someone you met at a sex party in a swingers convention?</label></li>
+      <li><label><input type="checkbox"> Had sex with someone you met at a sex party in a gang bang convention?</label></li>
+      <li><label><input type="checkbox"> Had sex with someone you met at a sex party in a threesome/swinger convention?</label></li>
+      <li><label><input type="checkbox"> Had sex with someone you met at a sex party in a play convention?</label></li>
+      <li><label><input type="checkbox"> Had sex with someone you met at a sex party in a polyamory convention?</label></li>
+      <li><label><input type="checkbox"> Had sex with someone you met at a sex party in a hedonism convention?</label></li>
+      <li><label><input type="checkbox"> Had sex with someone you met at a sex party in a fetish retreat?</label></li>
+      <li><label><input type="checkbox"> Had sex with someone you met at a sex party in a kink retreat?</label></li>
+      <li><label><input type="checkbox"> Had sex with someone you met at a sex party in a BDSM retreat?</label></li>
+      <li><label><input type="checkbox"> Had sex with someone you met at a sex party in a swingers retreat?</label></li>
+      <li><label><input type="checkbox"> Had sex with someone you met at a sex party in a gang bang retreat?</label></li>
+      <li><label><input type="checkbox"> Had sex with someone you met at a sex party in a threesome/swinger retreat?</label></li>
+      <li><label><input type="checkbox"> Had sex with someone you met at a sex party in a play retreat?</label></li>
+      <li><label><input type="checkbox"> Had sex with someone you met at a sex party in a polyamory retreat?</label></li>
+      <li><label><input type="checkbox"> Had sex with someone you met at a sex party in a hedonism retreat?</label></li>
+      <li><label><input type="checkbox"> Had sex with someone you met at a sex party in a sex club in another city?</label></li>
+      <li><label><input type="checkbox"> Had sex with someone you met at a sex party in a sex club in another country?</label></li>
+    </ol>
+    <button type="button" onclick="calculateScore()">Calculate Score</button>
+    <div id="result" style="display: none;"></div>
+    <button type="button" onclick="clearForm()">Clear</button>
+  </form>
+  <!-- Set the result section initially to display:none -->
+  
+
+    <div id="footer">Design inspired by <a href="https://www.instagram.com/officialujjwalkumar/" target="_blank">officialujjwalkumar</a></div>
+  </div>
+  <script>
+    function calculateScore() {
+      const questions = document.querySelectorAll('input[type="checkbox"]');
+      let score = 500;
+
+      questions.forEach((question) => {
+        if (question.checked) {
+          let x = Math.floor((Math.random() * 15) + 1)
+          score -= x;
+        }
+      });
+
+      const resultDiv = document.getElementById('result');
+      resultDiv.innerHTML = `<p>Your Rice Purity Score is: ${score/5}</p>`;
+
+      // Set the result section to display:block after calculating the score
+      resultDiv.style.display = 'block';
+    }
+
+    function clearForm() {
+      const questions = document.querySelectorAll('input[type="checkbox"]');
+      questions.forEach((question) => {
+        question.checked = false;
+      });
+
+      // Hide the result section when clearing the form
+      const resultDiv = document.getElementById('result');
+      resultDiv.style.display = 'none';
+    }
+  </script>
+ </html>
